@@ -1,0 +1,51 @@
+﻿<Window x:Class="Notebook.CreateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Create Account" Height="300" Width="550"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal" Background="DarkSlateBlue">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="7*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="Images/title.png" Stretch="Fill" Grid.RowSpan="3"
+               HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"
+               Grid.Column="0" Height="40" Margin="10, 0, 0, 0" />
+        <Image Source="Images/notepad.png" Stretch="Fill" Grid.RowSpan="2"
+               HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"
+               Grid.Column="0" Width="100" Height="100" />
+
+        <Label Content="NEW USERNAME" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"
+               Grid.Column="1" FontSize="15" Foreground="Gold" Margin="10, 0, 0, 0">
+        </Label>
+        <TextBox x:Name="username" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="1" Margin="10, 0, 20, 0"
+            Grid.Column="1" FontSize="20" Background="SlateBlue" Foreground="black" MaxLength="20">
+        </TextBox>
+
+        <Label Content="NEW PASSWORD" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="2"
+               Grid.Column="1" FontSize="15" Foreground="Gold" Margin="10, 0, 0, 0">
+        </Label>
+
+        <Button x:Name="backBtn" Grid.Column="1" Content="Back" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Height="35" Width="160"
+                Background="Snow" FontWeight="Bold" FontSize="15" Click="createNewAccountBtn_Click" Margin="10, 0, 0, 0" />
+        <Button x:Name="createNewAccountBtn" Grid.Column="1" Content="Create new account" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Center" Height="35" Width="160"
+                Background="Plum" FontWeight="Bold" FontSize="15" Click="createNewAccountBtn_Click" Margin="0, 0, 20, 0" />
+
+        <TextBox x:Name="password" VerticalAlignment="Center" Grid.Row="3" Margin="10,0,20,0"
+            Grid.Column="1" FontSize="20" Background="SlateBlue" Foreground="black" MaxLength="20" />
+    </Grid>
+</Window>

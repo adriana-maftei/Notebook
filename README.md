@@ -1,4 +1,4 @@
-This project is a Notebook app made with Visual Studio & C# programmming language. The EXE file is available in the "bin" folder. Main features I learned and build while developing this project:
+This project is a Notebook app made with Visual Studio & C# programmming language. The EXE file is available in the "bin" folder. Main features I learned and build while developing this project: 
 
  ⇒ working with XAML files
  ⇒ working with WPF (Windows Presentation Foundation)
